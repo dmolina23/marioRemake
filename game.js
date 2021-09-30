@@ -58,10 +58,10 @@ scene("game", ({ level, score }) => {
             '£                                       £',
             '£                                       £',
             '£                                       £',
-            '£        @@@@@@              x x        £',
+            '£        @&@@@@              x x        £',
             '£                          x x x        £',
-            '£                        x x x x  x   -+£',
-            '£               z   z  x x x x x  x   ()£',
+            '£                        x x x x  x     £',
+            '£               z   z  x x x x x  x     £',
             '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
         ]
     ]
@@ -83,7 +83,8 @@ scene("game", ({ level, score }) => {
         '!': [sprite('blue-block'), solid(), scale(0.5)],
         'z': [sprite('blue-evil-shroom'), solid(), 'dangerous', scale(0.5)],
         'x': [sprite('blue-steel'), solid(), scale(0.5)],
-        '£': [sprite('blue-brick'), solid(), scale(0.5)]
+        '£': [sprite('blue-brick'), solid(), scale(0.5)],
+        '&': [sprite('blue-surprise'), solid(), 'coin-surprise', scale(0.5)]
     }
 
     const gameLevel = addLevel(maps[level], levelCfg)
